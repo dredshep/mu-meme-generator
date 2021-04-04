@@ -1,7 +1,7 @@
 <div align="center">
 <h1>Meme Generator - NFT Market 🎣</h1>
 
-<p>Allows you to generate Meme NFT Token</p>
+<p>Allow you to generate Meme NFT Token</p>
 </div>
 
 ---
