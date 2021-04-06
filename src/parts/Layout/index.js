@@ -6,13 +6,15 @@ import Flex from 'components/UI/Flex';
 
 const Wrapper = styled.div`
   background-color: ${props => props.theme.palette.background.main};
-  min-height: 100vh;
+  min-height: calc(100vh - 4rem);
 `;
 
 const Header = styled(Flex)`
   background-color: ${props => props.theme.palette.background.secondary};
   height: 4rem;
   width: 100%;
+  position: fixed;
+  top: 0;
 `;
 
 const Logo = styled.img`
