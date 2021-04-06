@@ -1,18 +1,16 @@
 import React from 'react';
-import styled, { ThemeProvider } from 'styled-components';
+import { ThemeProvider } from 'styled-components';
 
+import Layout from 'parts/Layout';
 import theme from 'styles';
 import 'App.css';
-
-const Title = styled.h1`
-  color: ${props => props.theme.primary};
-`;
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <div className="App">
-        <Title>Meme generator</Title>
+        <Layout>
+        </Layout>
       </div>
     </ThemeProvider>
   );
