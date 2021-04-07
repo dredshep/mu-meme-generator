@@ -1,31 +1,27 @@
 import React from 'react';
-import styled from 'styled-components';
+import { makeStyles } from '@material-ui/core/styles';
+import Container from '@material-ui/core/Container';
 
-import { DEVICE } from 'utils/Device';
-
-const Container = styled.div`
-  max-width: 52rem;
-  width: 100%;
-  margin: 0 auto;
-  margin-top: 4rem;
-  min-height: calc(100vh - 4rem);
-`;
-
-const Content = styled.div`
-  padding: 2rem 2rem 4rem;
-  padding-top: 2rem;
-
-  @media ${DEVICE.laptop} { 
-    padding-top: 4rem;
+const useStyles = makeStyles((theme) => ({
+  root: {
+    paddingTop: theme.spacing(4),
+    paddingBottom: theme.spacing(4),
+    [theme.breakpoints.up('sm')]: {
+      paddingTop: theme.spacing(4)
+    },
+    [theme.breakpoints.up('md')]: {
+      paddingTop: theme.spacing(8),
+      paddingBottom: theme.spacing(4),
+    },
   }
-`;
+}));
 
-const PageWrapper = ({ children}) => {
+const PageWrapper = ({ children }) => {
+  const classes = useStyles();
+
   return (
-    <Container>
-      <Content>
-        {children}
-      </Content>
+    <Container maxWidth={'md'} className={classes.root}>
+      {children}
     </Container>
   );
 };

@@ -5,12 +5,12 @@
   font-style: normal;
 }
 
-@font-face {
+/* @font-face {
   font-family: "bigjohnpro";
   src: url("assets/fonts/bigjohnpro-light.otf") format("truetype");
   font-weight: lighter;
   font-style: normal;
-}
+} */
 
 @font-face {
   font-family: "bigjohnpro";
