@@ -10,7 +10,7 @@
 This project is the frontend project for Meme and a React.js project bootstrapped with create-react-app.
 
 ### Local http://localhost:3000
-### Development
+### Development https://mu-meme-generator.vercel.app/
 
 ---
 ## Installation
@@ -25,7 +25,7 @@ yarn deploy:vercel
 ---
 ## Development stacks
 
-* React.js + Styled-Components
+* React.js + Material UI
 ---
 ## Developers
 * Peter

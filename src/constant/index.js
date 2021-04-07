@@ -1,13 +1,5 @@
-const DEVICE_SIZE = {
-  mobileS: '320px',
-  mobileM: '375px',
-  mobileL: '425px',
-  tablet: '768px',
-  laptop: '1024px',
-  laptopL: '1440px',
-  desktop: '2560px'
-};
+const MAX_UPLOAD_SIZE = 52428800;
 
 export {
-  DEVICE_SIZE
+  MAX_UPLOAD_SIZE
 };
