@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(4),
     borderRadius: theme.spacing(2.5),
     height: '100%',
-    border: `2px dotted ${theme.palette.primary.main}`,
+    border: `2px dashed ${theme.palette.primary.main}`,
   },
   image: {
     width: '100%',

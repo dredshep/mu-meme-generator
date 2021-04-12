@@ -27,7 +27,8 @@ const useStyles = makeStyles((theme) => ({
 const UploadMedia = ({
   type,
   fileBuffer,
-  setFileBuffer
+  setFileBuffer,
+  className
 }) => {
   const [popup, setPopup] = useState();
   const classes = useStyles();
@@ -61,7 +62,7 @@ const UploadMedia = ({
   }
 
   return (
-    <>
+    <div className={className}>
       {isEmpty(fileBuffer) ? 
         <UploadArea
           placeholder={type.PLACEHOLDER}
@@ -92,7 +93,7 @@ const UploadMedia = ({
           </Grid>
         </Snackbar>
       }
-    </>
+    </div>
   );
 }
 
