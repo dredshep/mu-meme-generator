@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(4),
     height: '100%',
     borderRadius: theme.spacing(2.5),
-    border: `2px dotted ${theme.palette.primary.main}`,
+    border: `2px dashed ${theme.palette.primary.main}`,
     '&:focus': {
       outline: '0 !important'
     }
